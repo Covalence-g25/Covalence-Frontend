@@ -8,9 +8,7 @@ function FileDetailController($scope, $stateParams, $state, $http) {
   var database = 'http://localhost:3000/';
    $http.get(database +  'api/index/files/filedetail' + '/' + fileName)
    .then(function (result) {
-     console.log("why1?");
      $scope.fileName = result.data.data.fileName;
      console.log(result.data.data.fileName);
-     console.log("why2?");
  })
 }

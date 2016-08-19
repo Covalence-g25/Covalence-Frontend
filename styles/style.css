@@ -31,8 +31,21 @@ h2 {
   font-size: 2rem;
 }
 
+.row.aboutUsPage {
+  margin-top: 12rem;
+}
+
 body p {
   font-family: 'Open Sans';
+}
+
+body h2, body p {
+  margin-top: 12rem;
+}
+
+a:hover {
+  color: #2D3142;
+  text-decoration: none;
 }
 
 /* Footer Styles */
@@ -52,7 +65,7 @@ footer p {
   justify-content: flex-end;
 }
 
-/* Imported */
+/* Imported from The Hive */
 
 header {
   position: absolute;
@@ -61,9 +74,6 @@ header {
   width: 100%;
   overflow: hidden;
   z-index: 3; }
-
-.headerRow {
-  height: 5vw; }
 
 main {
   position: fixed;
@@ -83,18 +93,11 @@ footer {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 1em;
+  padding: 2rem;
   text-align: center;
+  font-size: 2rem;
   overflow: hidden;
 }
-
-.profileInfo {
-  margin: 10px;
-  padding: 0 0 10px 10px; }
-
-.scrollIt {
-  height: 35vw;
-  overflow-y: scroll; }
 
 .usImage {
   width: 90%;
