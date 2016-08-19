@@ -3,10 +3,11 @@ angular
    .controller('FilesController', FilesController);
 
 function FilesController($scope, $stateParams, $state, $http) {
-   var database = 'https://console.firebase.google.com/project/covalence-6384b/database/data/projects/pageData.json';
-   $http.get(database)
-
+   var database = 'http://localhost:3000/';
+   $http.get(database + 'api/index/file')
    .then(function (result) {
-     console.log("hello");
+     for(var i =0; i < result.data.data.length; i++){
+      $scope.fileResults = result.data.data;
+     }
  })
 }

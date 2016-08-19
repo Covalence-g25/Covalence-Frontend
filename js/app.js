@@ -15,10 +15,10 @@ function config($stateProvider, $urlRouterProvider) {
    controller: 'FilesController',
    templateUrl: 'files.html'
  }).state('home.filedetail', {
-   url: 'files/detail/:fileID',
+   url: 'files/filedetail/:fileID',
    controller: 'FileDetailController',
    templateUrl: 'filedetail.html'
- }).state('home.filedetail.commit', {
+ }).state('home.commit', {
    url: 'file/detail/:fileID/:commitID',
    controller: 'CommitController',
    templateUrl: 'commit.html'
