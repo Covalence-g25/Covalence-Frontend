@@ -2,9 +2,6 @@ var express = require('express');
 var router = express.Router();
 var knex = require('../db/knex');
 
-// serve API on express separately, and use angular for static front end with $http() to endpoints
-// states instead of routes
-
 router.get('/index', function(req, res, next){
   knex('file_users').select().then(function(data){
     res.json({data: data})
